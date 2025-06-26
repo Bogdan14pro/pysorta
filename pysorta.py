@@ -1,12 +1,14 @@
-# Welcome to PySorta v1.0.0 – by theProject.
-# We’re building something cool with anyone of any skill level.
-# This script is heavily commented to help beginners — feel free to remove comments if needed.
+"""
+PySorta v1.0.0 by theProject.
 
-import shutil  # For moving files between folders
-from pathlib import Path  # For safe, cross-platform path handling
-from datetime import datetime  # For organizing by last modified time
+This script organizes files in a directory by type, size, or modification date.
+It’s heavily commented for beginners. Contributions welcome!
+"""
 
-# 🎯 Define file categories and associated extensions
+import shutil
+from pathlib import Path
+from datetime import datetime
+
 FILE_CATEGORIES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg"],
     "Documents": [
@@ -20,7 +22,7 @@ FILE_CATEGORIES = {
     ],
     "Fonts": [".ttf", ".otf", ".woff", ".woff2"],
     "Executables": [".exe", ".msi", ".apk", ".dmg", ".pkg"],
-    "Others": []  # Everything else
+    "Others": []
 }
 
 
@@ -60,7 +62,7 @@ def organize_by_size(directory):
     print("📏 Organizing by file size...")
     for item in directory.iterdir():
         if item.is_file():
-            size = item.stat().st_size  # Size in bytes
+            size = item.stat().st_size
             if size < 1 * 1024 * 1024:
                 size_folder = "Small (<1MB)"
             elif size < 10 * 1024 * 1024:
