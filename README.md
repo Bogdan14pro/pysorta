@@ -31,10 +31,8 @@ https://github.com/your-username/pysorta.git
 5. Choose a folder to save the project
 6. Open the folder when prompted
 
-### ✅ You’re now ready to run `pysorta.py` and start organizing!
-
-
-
+## ✅ You’re now ready to run `pysorta.py` and start organizing!
+***
 
 
 # 🚿 Lets get cleaning!
@@ -101,7 +99,7 @@ Then follow the interactive prompts:
 
 ### 🧩 Customize File Types
 
-Add or edit categories in the FILE_CATEGORIES section of the script:
+#### Add or edit categories in the FILE_CATEGORIES section of the script:
 ```bash
 FILE_CATEGORIES = {
     "Images": [".jpg", ".jpeg", ".png"],
@@ -111,7 +109,7 @@ FILE_CATEGORIES = {
 ```
 The script will auto-create folders and move matching files into them.
 
-📂 Example Output
+#### 📂 Example Output
 ```bash
 /Downloads
 ├── Images
@@ -121,7 +119,7 @@ The script will auto-create folders and move matching files into them.
 ├── Code
 │   └── tool.py
 ```
-Or by date:
+#### Or by date:
 ```bash
 /Downloads
 ├── 2024-12
@@ -149,7 +147,7 @@ Pull requests and feedback are warmly welcomed, the goal is for all to use prope
 
 ## There is so so much more we can do with this - ensure you check out our guide on Contributing here: [CONTRIBUTING.md](CONTRIBUTING.md)
 
-⸻
+***
 
 ## 🪪 License
 
@@ -162,14 +160,14 @@ You are free to use, modify, distribute, and build on this project — commercia
 
 Please keep the original author attribution if redistributing. If you're new to this, please read both links!
 
-⸻
+***
 
 ## ✨ A Note from theProject.
 
 This was built as a small but powerful utility by theProject.  If it helped you, taught you something, or made your life easier — that means everything.
 Go build cool things. 🌍.  If you feel compelled, please consider joining ouir cause and sonsoring when it becomes available, or simply giving us a star (we've never got one yet!)  It's all about growing ourselves and aiming to share that confidence and fortitude with others, welcoming a vast community that might not feel good enough to be here when they truly are.
 
-⸻
+***
 
 ## 💣 A Manifesto for the Imposters
 
@@ -187,18 +185,18 @@ We embrace AI as a tool, not a substitute — and prepare the lost for the new f
 
 I look forward to working with you.
 
-⸻
+***
 
 ## Hack the planet.
 ### 👾 Lithium187 (a name that brings me back)
 
 ---
 
-## # Apple App Store Link for Pythonista 3
+## Apple App Store Link for Pythonista 3
 
 [![Download on the App Store](https://img.shields.io/badge/Pythonista%203-App%20Store-blue.svg?logo=apple)](https://apps.apple.com/us/app/pythonista-3/id1085978097)
 
----
+***
 
 <p align="center">
   <a href="https://bytheproject.com" target="_blank">
