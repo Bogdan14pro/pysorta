@@ -41,7 +41,7 @@ git push origin my-cool-feature
 
 ## 💬 Questions?
 
-Feel free to open an issue or email: hello@bytheproject.com
+Feel free to open an issue or email: tjsmith@bytheproject.com
 
 Let’s keep it clean, kind, and collaborative.
 
