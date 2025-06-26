@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/your-username/pysorta/main/logo.png" width="220" alt="PySorta logo" />
+  <img src="https://raw.githubusercontent.com/theLroject/py-sorta/main/logo.png" width="220" alt="PySorta logo" />
 </p>
 
 # 📁 PySorta: The Pythonic Folder Organizer  ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
