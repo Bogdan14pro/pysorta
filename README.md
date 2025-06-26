@@ -207,11 +207,19 @@ I look forward to working with you.
 
 ***
 
-<p align="center">
+<p align="left">
   <a href="https://bytheproject.com" target="_blank">
     <img src="theproject.png" alt="theProject. logo" height="70" />
-  </a>
+  </a> 
 </p>
+
+***
+
+## 📬 Need Help From a Friend at theProject?
+
+If you have questions, feature requests, or just want to say hi — feel free to reach out:
+
+📧 **tjsmith@bytheproject.com**
 
 
 
