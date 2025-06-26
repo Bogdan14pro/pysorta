@@ -6,6 +6,7 @@
 
 <div align="center">
 	
+[![PySorta CI](https://github.com/theProject/pysorta/actions/workflows/python.yml/badge.svg)](https://github.com/theProject/pysorta/actions/workflows/python.yml)
 ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)
 ![Open Source Love](https://img.shields.io/badge/open--source-love-%23ff69b4)
