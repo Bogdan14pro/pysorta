@@ -2,7 +2,9 @@
   <img src="https://raw.githubusercontent.com/theProject/pysorta/main/logo.png" width="220" alt="PySorta logo" />
 </p>
 
-# 📁 PySorta: The Pythonic Folder Organizer  ![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+<p align="center"># 📁 PySorta: The Pythonic Folder Organizer</p>
+
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)
 ![Open Source Love](https://img.shields.io/badge/open--source-love-%23ff69b4)
 ![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
