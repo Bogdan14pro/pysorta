@@ -32,6 +32,7 @@ https://github.com/your-username/pysorta.git
 6. Open the folder when prompted
 
 ## ✅ You’re now ready to run `pysorta.py` and start organizing!
+
 ***
 
 
@@ -45,7 +46,7 @@ Keep your folders tidy and organized with this lightweight Python script that au
 
 Great for Downloads, Desktop folders, or managing cluttered project directories!
 
----
+***
 
 ## 🛠 Features
 
@@ -59,7 +60,7 @@ Great for Downloads, Desktop folders, or managing cluttered project directories!
 - Zero dependencies — pure Python!
 - Fully Open Source
 
----
+***
 
 ## 🚀 How to Use
 
@@ -68,7 +69,7 @@ Great for Downloads, Desktop folders, or managing cluttered project directories!
 - Python 3.x
 - Optional: [Pythonista](http://omz-software.com/pythonista/) app for iOS/iPadOS. Link to the App Store at the bottom of this ReadMe.
 
----
+***
 
 ### 2. Run the Script
 
@@ -93,9 +94,13 @@ Then follow the interactive prompts:
 	4.	Enter a path like . or full iOS-accessible folder path
 	5.	Choose your sorting method
 
-✅ Tip: You can hardcode a path in the script if needed (e.g. directory = Path("/private/...")).
+✅ Tip: You can hardcode a path in the script if needed, e.g. 
 
-⸻
+```bash
+directory = Path("/private/...")).
+```
+
+***
 
 ### 🧩 Customize File Types
 
@@ -127,11 +132,15 @@ The script will auto-create folders and move matching files into them.
 ├── 2025-06
 │   └── demo.mov
 ```
+***
 
 ## 🐍 So again - what is PySorta?
 
 PySorta (short for “Python Sorta Everything”) is a friendly, flexible script to clean up digital messes.
 Whether you’re decluttering a Downloads folder or sorting design assets, PySorta helps you do it cleanly and effortlessly.
+But it's also an invitation to the world of folks who are new to this, and want to be a part of it - hack away my friends!
+
+***
 
 ## 🤝 Contributing
 
@@ -145,7 +154,7 @@ You’re invited to:
 
 Pull requests and feedback are warmly welcomed, the goal is for all to use proper features of GitHub, and gain the coding discipline through the use of branches. 💬
 
-## There is so so much more we can do with this - ensure you check out our guide on Contributing here: [CONTRIBUTING.md](CONTRIBUTING.md)
+#### There is so so much more we can do with this - ensure you check out our guide on Contributing here: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ***
 
@@ -190,9 +199,9 @@ I look forward to working with you.
 ## Hack the planet.
 ### 👾 Lithium187 (a name that brings me back)
 
----
+***
 
-## Apple App Store Link for Pythonista 3
+#### Apple App Store Link for Pythonista 3
 
 [![Download on the App Store](https://img.shields.io/badge/Pythonista%203-App%20Store-blue.svg?logo=apple)](https://apps.apple.com/us/app/pythonista-3/id1085978097)
 
