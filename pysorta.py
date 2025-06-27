@@ -27,7 +27,16 @@ FILE_CATEGORIES = {
 
 
 def get_category(extension):
-    """Return the file category based on extension."""
+    """
+    Return the file category based on its extension.
+
+    Args:
+        extension (str): The file extension (e.g., '.jpg', '.pdf').
+
+    Returns:
+        str: The category name corresponding to the extension, or 'Others' if no match is found.
+    """
+
     for category, extensions in FILE_CATEGORIES.items():
         if extension.lower() in extensions:
             return category
@@ -35,7 +44,16 @@ def get_category(extension):
 
 
 def organize_by_type(directory):
-    """Organize files into folders based on file type."""
+    """
+    Organize files in the given directory into subfolders based on file type.
+
+    Args:
+        directory (Path): A pathlib.Path object representing the directory to organize.
+
+    Side Effects:
+        Moves files into folders named after their categories (e.g., 'Images', 'Documents').
+    """
+
     print("🔤 Organizing by file type...")
     for item in directory.iterdir():
         if item.is_file():
@@ -46,7 +64,16 @@ def organize_by_type(directory):
 
 
 def organize_by_date(directory):
-    """Organize files into folders based on last modified date."""
+    """
+    Organize files in the given directory into subfolders by last modified date (YYYY-MM format).
+
+    Args:
+        directory (Path): A pathlib.Path object representing the directory to organize.
+
+    Side Effects:
+        Moves files into folders named by year and month (e.g., '2024-06').
+    """
+
     print("📅 Organizing by date modified (YYYY-MM)...")
     for item in directory.iterdir():
         if item.is_file():
@@ -58,7 +85,21 @@ def organize_by_date(directory):
 
 
 def organize_by_size(directory):
-    """Organize files into folders based on file size."""
+    """
+    Organize files in the given directory into subfolders based on file size.
+
+    Size categories:
+        - Small (<1MB)
+        - Medium (1–10MB)
+        - Large (>10MB)
+
+    Args:
+        directory (Path): A pathlib.Path object representing the directory to organize.
+
+    Side Effects:
+        Moves files into folders named after size categories.
+    """
+
     print("📏 Organizing by file size...")
     for item in directory.iterdir():
         if item.is_file():
@@ -75,7 +116,23 @@ def organize_by_size(directory):
 
 
 def main():
-    """Main entry point for PySorta."""
+    
+    """
+    Main entry point for PySorta.
+
+    Prompts the user to input a folder path (defaults to current directory if blank),
+    then allows them to choose how to organize the files in that folder:
+        1. By File Type
+        2. By Date Modified
+        3. By File Size
+
+    Based on the selected option, the appropriate organization function is called.
+    Files in the specified directory will be moved into categorized subfolders.
+
+    Side Effects:
+        Prints messages to the console and moves files on the file system.
+    """
+
     print("📂 Welcome to PySorta – Sorta the Best!")
 
     path_input = input(
