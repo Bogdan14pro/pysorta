@@ -116,7 +116,6 @@ def organize_by_size(directory):
 
 
 def main():
-    
     """
     Main entry point for PySorta.
 
