@@ -1,10 +1,9 @@
 <div align="center">
 
-  <img src="logo.png" alt="PySorta Logo" height="300" />
+  <img src="logo.png" alt="PySorta Logo" height="200" />
 
-<div align="center">
-  <h2>🐍PySorta</h2>
-  <p>The Pythonic Folder Organizer</p>
+  <h2>PySorta</h2>
+  <p>The Pythonic 🐍 Folder Organizer</p>
 
   <p>
     <a href="https://github.com/theProject/pysorta/actions/workflows/python.yml">
@@ -15,6 +14,7 @@
     <img src="https://img.shields.io/badge/open--source-love-%23ff69b4" alt="Open Source Love" />
     <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions Welcome" />
   </p>
+
 </div>
 
 ***
