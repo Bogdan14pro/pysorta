@@ -1,17 +1,16 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/theProject/pysorta/main/logo.png" width="220" alt="PySorta logo" />
-</p>
-
-# <p align="center">🗂️ PySorta: The Pythonic Folder Organizer</p>
-
 <div align="center">
-	
-[![PySorta CI](https://github.com/theProject/pysorta/actions/workflows/python.yml/badge.svg)](https://github.com/theProject/pysorta/actions/workflows/python.yml)
-![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
-![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)
-![Open Source Love](https://img.shields.io/badge/open--source-love-%23ff69b4)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+  <h1>🗂️ PySorta</h1>
+  <p>The Pythonic Folder Organizer</p>
 
+  <p>
+    <a href="https://github.com/theProject/pysorta/actions/workflows/python.yml">
+      <img src="https://github.com/theProject/pysorta/actions/workflows/python.yml/badge.svg" alt="PySorta CI" />
+    </a>
+    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License" />
+    <img src="https://img.shields.io/badge/python-3.7%2B-blue.svg" alt="Python Version" />
+    <img src="https://img.shields.io/badge/open--source-love-%23ff69b4" alt="Open Source Love" />
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg" alt="Contributions Welcome" />
+  </p>
 </div>
 
 ***
