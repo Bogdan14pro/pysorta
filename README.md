@@ -1,5 +1,9 @@
 <div align="center">
-  <h1>🗂️ PySorta</h1>
+
+  <img src="logo.png" alt="PySorta Logo" height="90" />
+
+<div align="center">
+  <h1>🐍PySorta</h1>
   <p>The Pythonic Folder Organizer</p>
 
   <p>
