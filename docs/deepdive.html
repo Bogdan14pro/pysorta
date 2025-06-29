@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PySorta Deep Dive</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1, h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #e20074;
+      padding-bottom: 0.4rem;
+    }
+    code {
+      background-color: #1e1e1e;
+      display: block;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      margin-bottom: 2rem;
+    }
+    nav {
+      margin-top: 2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #333;
+    }
+    .logo {
+      margin-top: 1rem;
+      height: 70px;
+    }
+    a {
+      color: #e20074;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔍 PySorta: Deep Dive</h1>
+  <p>Explore the full breakdown of <strong>pysorta.py</strong>, understand its flow, and contribute with confidence.</p>
+
+  <h2>📦 Project Structure</h2>
+  <p>PySorta is a single-file script but uses clear modular logic. Here's the flat structure:</p>
+  <code>
+  pysorta.py
+  README.md
+  deepdive.html
+  assets/
+  </code>
+
+  <h2>🚀 Script Overview</h2>
+  <p>The script follows a clean top-to-bottom flow:</p>
+  <ol>
+    <li>Import required libraries</li>
+    <li>Define file category mappings</li>
+    <li>Get folder from user</li>
+    <li>Ask how to sort (type/date/size)</li>
+    <li>Sort using corresponding logic</li>
+  </ol>
+
+  <h2>1️⃣ Imports</h2>
+  <code>
+import os
+import shutil
+from datetime import datetime
+from pathlib import Path
+  </code>
+  <p><strong>Why?</strong> These are standard Python libraries for working with file systems and timestamps.</p>
+
+  <h2>2️⃣ File Categories</h2>
+  <code>
+FILE_CATEGORIES = {
+    "Images": [".jpg", ".jpeg", ".png"],
+    "Documents": [".pdf", ".docx", ".txt"],
+    "3D Models": [".obj", ".glb", ".fbx"]
+}
+  </code>
+  <p>This dictionary defines how files are grouped. Add more as needed!</p>
+
+  <h2>3️⃣ Get Folder Path</h2>
+  <code>
+folder = input("Enter folder path to organize: ").strip()
+if not folder:
+    folder = os.getcwd()
+  </code>
+  <p>If the user doesn’t enter a folder, it uses the current working directory.</p>
+
+  <h2>4️⃣ Prompt User</h2>
+  <code>
+print("Choose sorting method:")
+print("1. By file type")
+print("2. By date modified")
+print("3. By file size")
+choice = input("Enter your choice (1/2/3): ")
+  </code>
+  <p>Simple CLI interface to choose sorting mode.</p>
+
+  <h2>5️⃣ Sorting Functions</h2>
+  <code>
+def sort_by_type(path):
+    for file in path.iterdir():
+        if file.is_file():
+            for category, extensions in FILE_CATEGORIES.items():
+                if file.suffix.lower() in extensions:
+                    target_folder = path / category
+                    target_folder.mkdir(exist_ok=True)
+                    shutil.move(str(file), str(target_folder / file.name))
+  </code>
+  <p>This is the core logic for organizing by type. The other two modes (date/size) use similar logic.</p>
+
+  <nav>
+    <a href="index.html">⬅️ Back to Home</a>
+  </nav>
+
+  <footer>
+    <p>Built with ❤️ by <span style="color:#e20074;font-weight:bold;">theProject.</span></p>
+    <a href="https://bytheproject.com" target="_blank">
+      <img src="assets/light_logo.png" alt="theProject logo" class="logo"/>
+    </a>
+  </footer>
+
+</body>
+</html>
