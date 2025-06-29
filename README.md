@@ -1,6 +1,7 @@
 <div align="center">
 
-  <img src="assets/dark_logo.png" alt="PySorta Logo" height="200" />
+  <img src="./docs/assets/dark_logo.png" alt="PySorta Logo" height="200" />
+
 
   <h2>PySorta</h2>
   <p>The Pythonic 🐍 Folder Organizer</p>
