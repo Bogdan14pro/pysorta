@@ -89,9 +89,9 @@ def organize_by_size(directory):
     Organize files in the given directory into subfolders based on file size.
 
     Size categories:
-        - Small (<1MB)
+        - Small (under 1MB)
         - Medium (1–10MB)
-        - Large (>10MB)
+        - Large (over 10MB)
 
     Args:
         directory (Path): A pathlib.Path object representing the directory to organize.
@@ -105,11 +105,11 @@ def organize_by_size(directory):
         if item.is_file():
             size = item.stat().st_size
             if size < 1 * 1024 * 1024:
-                size_folder = "Small (<1MB)"
+                size_folder = "Small (under 1MB)"
             elif size < 10 * 1024 * 1024:
                 size_folder = "Medium (1–10MB)"
             else:
-                size_folder = "Large (>10MB)"
+                size_folder = "Large (over 10MB)"
             dest_folder = directory / size_folder
             dest_folder.mkdir(exist_ok=True)
             shutil.move(str(item), dest_folder / item.name)
